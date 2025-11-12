@@ -1,0 +1,190 @@
+<!--
+  Dosya: index.html
+  Açıklama: Tek dosyalık, modern görünümlü, ücretsiz barındırmaya hazır web sitesi.
+  Kullanım: Bu dosyayı kaydedip tarayıcıda açın. (Örn: index.html)
+  Yayımlama önerileri: GitHub Pages, Netlify veya Vercel ile ücretsiz olarak yayınlayabilirsiniz.
+-->
+
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Benim Ücretsiz Web Sitem</title>
+  <meta name="description" content="Tek sayfa, modern tasarımlı ücretsiz web sitesi örneği.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --muted:#94a3b8; --glass: rgba(255,255,255,0.04) }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#071029 0%, #081424 100%);color:#e6eef8;line-height:1.5;
+    }
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;background:linear-gradient(135deg,var(--accent),#06b6d4);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:36px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.hero-right{order:-1}}
+    h1{font-size:36px;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .cta{display:flex;gap:10px}
+    .btn{padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 22px rgba(2,6,23,0.6);}
+    .stats{display:flex;gap:12px;margin-top:14px}
+    .stat{flex:1;padding:12px;border-radius:10px;background:var(--glass);text-align:center}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    @media (max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+    .section{margin-top:40px}
+    footer{margin-top:40px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+    /* simple contact form */
+    form{display:grid;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    textarea{min-height:120px}
+    .small{font-size:13px;color:var(--muted)}
+    .socials{display:flex;gap:8px}
+    .pill{display:inline-block;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:999px;font-size:13px}
+    .badge{font-size:12px;padding:6px 8px;background:rgba(255,255,255,0.02);border-radius:8px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">WS</div>
+        <div>
+          <div style="font-weight:700">Benim Site</div>
+          <div class="small">Hızlı • Ücretsiz • Tek Sayfa</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#features">Özellikler</a>
+        <a href="#about">Hakkında</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Basit, şık ve tamamen ücretsiz web siten hazır.</h1>
+          <p class="lead">Bu tek sayfalık şablon; portföy, tanıtım veya kişisel landing page olarak kullanılmaya uygundur. İndir, düzenle ve ücretsiz olarak yayınla.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Bana Ulaş</a>
+            <a class="btn ghost" href="#features">Detaylar</a>
+          </div>
+
+          <div class="card" style="margin-top:18px">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div class="small">Hazır şablon</div>
+                <div style="font-weight:700">Tek dosya — index.html</div>
+              </div>
+              <div class="pill">Ücretsiz</div>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <div style="font-weight:700">0 ₺</div>
+                <div class="small">Barındırma maliyeti</div>
+              </div>
+              <div class="stat">
+                <div style="font-weight:700">1 dakikada</div>
+                <div class="small">Kurulum</div>
+              </div>
+              <div class="stat">
+                <div style="font-weight:700">Responsive</div>
+                <div class="small">Mobil uyumlu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right card">
+          <div style="font-weight:700;margin-bottom:10px">Hızlı Özet</div>
+          <div class="small">Bu alana kısa bir bio, portföy bağlantısı veya en önemli üç hizmetinizi yazabilirsiniz.</div>
+
+          <div class="grid" style="margin-top:16px">
+            <div class="card small">Portföy</div>
+            <div class="card small">Hizmetler</div>
+            <div class="card small">İletişim</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="features" class="section">
+        <h2>Özellikler</h2>
+        <div class="small">Bu şablonun içerdiği hızlı özellikler:</div>
+        <ul class="small">
+          <li>Tek dosya: kolay düzenleme</li>
+          <li>Responsive tasarım</li>
+          <li>Basit iletişim formu (mailto veya üçüncü parti form sağlayıcı ile çalışır)</li>
+          <li>Kolay deploy: GitHub Pages / Netlify / Vercel</li>
+        </ul>
+      </section>
+
+      <section id="about" class="section">
+        <h2>Hakkında</h2>
+        <div class="card small">Bu alan sizin ve projenizin kısa tanıtımı için ayrıldı. Örnek: “Ben Ahmet, oyun geliştiricisiyim. Portföyümü ve projelerimi burada bulabilirsiniz.”</div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>İletişim</h2>
+        <div class="card">
+          <div style="display:grid;grid-template-columns:1fr 320px;gap:18px">
+            <div>
+              <form id="contactForm" onsubmit="handleSubmit(event)">
+                <input id="name" placeholder="İsminiz" required>
+                <input id="email" type="email" placeholder="E-posta" required>
+                <textarea id="message" placeholder="Mesajınız..." required></textarea>
+                <div style="display:flex;gap:8px">
+                  <button class="btn" type="submit">Gönder</button>
+                  <a class="btn ghost" href="mailto:ornek@ornek.com?subject=Web%20Sitesi%20İletişim">E-posta ile</a>
+                </div>
+                <div id="feedback" class="small" style="margin-top:8px;color:var(--muted)"></div>
+              </form>
+            </div>
+
+            <div>
+              <div class="small" style="margin-bottom:8px">Sosyal</div>
+              <div class="socials">
+                <a class="badge" href="#">Twitter</a>
+                <a class="badge" href="#">Instagram</a>
+                <a class="badge" href="#">GitHub</a>
+              </div>
+
+              <div style="margin-top:18px" class="small">İpucu: Form göndermek için Formspree, Getform veya Netlify Forms gibi servisleri bağlayabilirsiniz.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Benim Site — Ücretsiz şablon</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const feedback = document.getElementById('feedback');
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      if(!name||!email||!msg){ feedback.textContent = 'Lütfen tüm alanları doldurun.'; return }
+
+      // Basit demo: tarayıcıda form verilerini mailto ile açar.
+      const body = encodeURIComponent(`İsim: ${name}\nE-posta: ${email}\n\nMesaj:\n${msg}`);
+      window.location.href = `mailto:ornek@ornek.com?subject=Web%20Formu&body=${body}`;
+      feedback.textContent = 'E-posta istemcisi açıldıysa mesajınız hazırlandı.';
+    }
+  </script>
+</body>
+</html>
